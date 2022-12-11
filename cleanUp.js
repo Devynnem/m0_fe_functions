@@ -8,39 +8,41 @@
 
 
 // EX 1:
-function nameQuestion() {
+function askName() {
   console.log("Hello, what is your name?")
 }
 
-nameQuestion()
+askName()
 
+// I changed the verb in the name to make it more clear.
 
 // EX 2:
-function addThreeNums(first, second, third) {
-var sum = first + second + third
-console.log(sum);
-      }
+function add(first, second, third) {
+  var sum = first + second + third;
+  console.log(sum);
+}
 
-addThreeNums(1, 2, 3);
-addThreeNums(4, 2, 7);
-
+add(1, 2, 3);
+add(4, 2, 7);
+// I change the name to make it easier to type out and change down the road if we wanted to add more or take away numbers
+// I also deleted some weird spacing in there, as well as added a semi colon after the second line.
 
 // EX 3:
-func makeFreshPesto(){
-  console.log("Buy ingredients: basil, parmesan, romano, olive oil, pine nuts, garlic, salt, pepper");
-  console.log("Pulse basil and pine nuts");
-  console.log("Add garlic and cheeses");
-  console.log("Slowly pour in oil");
-  console.log("Season");    }
+function makeFreshPesto(ingredients, instructions) {
+  console.log(`I first purchase ${ingredients}. I then follow these steps, ${instructions}. Enjoy!`)}
+  makeFreshPesto("basil, parmesan, romano, olive oil, pine nuts, garlic, salt, pepper","pulse basil and pine nuts. Add garlic and cheeses. Slowly pour in oil and season");
 
-makeFreshPesto();
 
+// I minimized the amount of console.logs to one, and string interpolated the arguments into the console.log.
 
 //  EX 4:
-function average(num1, num2) 
-  {
-var sum = num1 + num2;
-    var avg = sum / 2;
 
-  console.log(`the average is: ${avg}`.)
-  }
+  function avg(num1, num2) {
+    var sum = num1 + num2;
+        var avg = sum /2;
+      console.log(`The average is: ${avg}`)
+    }
+      avg(6,10)
+
+      //I changed the name to just avg. I deleted some weird spacing things.
+      //I also added a call and arguments, to give value to num1 and num2 and to make the code actually work.
