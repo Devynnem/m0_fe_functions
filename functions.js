@@ -25,31 +25,35 @@ function payRange(name, min, max) {
 
 checkStock(4, "Coffee");
 // => "Coffee is stocked"
-function checkStock (groceryItem) {
-    console.log(`${groceryItem} is stocked!`)
-  }
-  checkStock("Coffee");
+
+ 
 
 checkStock(3, "Tortillas");
 // => "Tortillas - running LOW"
 
-function checkStock (groceryItem) {
-    console.log(`${groceryItem} are running low.`)
-    }
-    checkStock("Tortillas")
+
 
 checkStock(0, "Cheese");
 // => "Cheese - OUT of stock!"
 
-function checkStock (groceryItem) {
-    console.log(`${groceryItem} is OUT of stock!`)
-    }
-    checkStock("Cheese");
+
 
 checkStock(1, "Salsa");
 // => "Salsa - running LOW"
 
-function checkStock (groceryItem) {
-    console.log(`${groceryItem} is running low.`)
-    }
-    checkStock("Salsa");
+
+
+    function checkStock(num, groceryItem) {
+        if (num === 4) 
+            console.log(`${groceryItem} is stocked!`);
+       else if (num === 3) 
+         console.log(`${groceryItem} are running low.`)
+       else if (num === 0) 
+       console.log(`${groceryItem} is OUT of stock!`)
+      else if (num === 1) 
+        console.log(`${groceryItem} is running low.`)
+      }
+        checkStock(4, "Coffee");
+        checkStock(3, "Tortillas");
+        checkStock(0, "Cheese");
+        checkStock(1, "Salsa");
