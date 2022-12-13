@@ -23,37 +23,36 @@ function payRange(name, min, max) {
 
 // 4: Write a function that satifies the following interaction pattern:
 
-checkStock(4, "Coffee");
-// => "Coffee is stocked"
+// checkStock(4, "Coffee");
+// // => "Coffee is stocked"
 
  
 
-checkStock(3, "Tortillas");
-// => "Tortillas - running LOW"
+// checkStock(3, "Tortillas");
+// // => "Tortillas - running LOW"
 
 
 
-checkStock(0, "Cheese");
-// => "Cheese - OUT of stock!"
+// checkStock(0, "Cheese");
+// // => "Cheese - OUT of stock!"
 
 
 
-checkStock(1, "Salsa");
-// => "Salsa - running LOW"
+// checkStock(1, "Salsa");
+// // => "Salsa - running LOW"
 
 
 
     function checkStock(num, groceryItem) {
-        if (num === 4) 
+        if (num >= 4) {
             console.log(`${groceryItem} is stocked!`);
-       else if (num === 3) 
-         console.log(`${groceryItem} are running low.`)
-       else if (num === 0) 
-       console.log(`${groceryItem} is OUT of stock!`)
-      else if (num === 1) 
-        console.log(`${groceryItem} is running low.`)
-      }
+        } else if (num < 4 && num >= 1) {
+            console.log(`${groceryItem} are running low.`)
+        } else {
+            console.log(`${groceryItem} is OUT of stock!`)
+        }
+    }
         checkStock(4, "Coffee");
         checkStock(3, "Tortillas");
+        checkStock(1, "Salsas");
         checkStock(0, "Cheese");
-        checkStock(1, "Salsa");
