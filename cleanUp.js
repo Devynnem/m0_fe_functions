@@ -39,10 +39,10 @@ function makeFreshPesto(ingredients, instructions) {
 
   function avg(num1, num2) {
     var sum = num1 + num2;
-        var avg = sum /2;
-      console.log(`The average is: ${avg}`)
-    }
-      avg(6,10)
+    var avg = sum /2;
+    console.log(`The average is: ${avg}`)
+  }
+  avg(6,10)
 
       //I changed the name to just avg. I deleted some weird spacing things.
       //I also added a call and arguments, to give value to num1 and num2 and to make the code actually work.
